@@ -1,0 +1,13 @@
+# seedを設定せずにconfigを読み込もうとするとエラーを吐く
+seed: 42
+model:
+  name: "model_name_1"
+  # num_classesをstrで指定した場合、いい感じにキャストしてくれる。
+  # num_classes: "10"
+  # キャストできない型を指定した場合はエラーを吐く
+  num_classes: "10.8"
+dataset:
+  name: "dataset_name_1"
+  train_batch_size: 32
+train:
+  lr: 0.001

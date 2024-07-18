@@ -1,0 +1,9 @@
+seed: 42
+model:
+  name: "model_name_1"
+  num_classes: 10
+dataset:
+  name: "dataset_name_1"
+  train_batch_size: 32
+train:
+  lr: 0.001
